@@ -1,0 +1,221 @@
+/*background/invisble stuff*/
+body {background-image: url("https://i.stack.imgur.com/l0JyZ.jpg")}
+
+.invisibleBox {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+/*Navigation Bar including Name*/
+.myName {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#yourName{
+    height: 50px;
+    width: 20%;
+    background-color: #4aaaa5;
+    float: left;
+    display: inline;
+    font-weight: 100;  
+}
+
+.navBar{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    margin:0 0 1% 0;
+    border-bottom: 3px grey solid;
+}
+
+.topRightNav {
+    float: right;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+a {
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 10px;
+}
+
+/*body of page - general */
+.pTitle {
+    color: #4aaaa5;
+    border-bottom: 3px grey solid;
+    font-size: 30px;
+    width: 100%;
+    padding-bottom: 1%;
+    font-weight: bold;
+}
+
+.pSection {
+    width: 96%;
+    height: 50%;
+    background-color: white;
+    padding: 2%;
+    margin-bottom: 52px;
+    overflow: auto;
+}
+
+/*bottom of the page*/
+.footer {
+    height: 5%;
+    width: 100%;
+    background-color:grey;
+    border-top: 3px #4aaaa5 solid;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#copyright {
+    color: white;
+    text-align: center;
+    vertical-align: top;
+    font-size: small;
+    margin: auto;
+}
+
+/*About Me (specifics)*/
+#aboutMePhoto {
+    float: left;
+    margin: 10px 10px 10px 0;
+    height: 30%;
+    width: 30%;
+}
+
+p {
+    color: grey;
+    text-align: left;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    margin: 10px;
+    padding: 0;
+}
+
+
+/*Contact Form*/
+
+input[type=text], textarea, label{
+    width: 60%; /* Full width */
+    padding: 12px 0 12px 0; /* Some padding */  
+    resize: vertical;
+    float: left;
+}
+
+#name, #email, #message {
+    padding: 10px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 1% 0;
+    margin: 0 0 1% 0;
+    width: 100%;
+    float: left;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    float: left;
+    clear: both;
+    cursor: pointer;
+    resize: vertical;
+    margin: 10px 0 10px 0;
+}
+
+input[type=submit]:hover {
+    background-color: #4aaaa5;
+    clear: both;
+    resize: vertical;
+}
+
+/*Portfolio Section 
+        img is only for Portfolio pics, About Me photo has own id*/
+img {
+    margin: 1%;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.column {
+    width: 33%;
+    background-color: white;
+    float: left;
+    display: block;
+}
+
+.invisibleColumn {
+    width: 33%;
+    background-color: white;
+    float: ;
+    display: block;
+}
+
+.imgContainer {
+    color: white;
+    width: 33%;
+    height: 20%;
+    position: relative;
+    text-align: center;
+    
+}
+
+.caption {
+    color: white;
+    background-color: #4aaaa5;
+    width: 190px;
+    height:12.5%;
+    clear: both;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 20px;
+    margin: auto;
+    padding: 5px;
+}
+
+@media screen and (max-width: 980px) {
+/* Navigation Bar */
+    .navBar.invisibleBox {
+        width: 66%;
+        margin: auto;
+        overflow: auto;
+    }
+    
+    .invisibleBox {width: 95%}
+
+    .pSection {
+        width: 70%;
+        float: left;
+        overflow: hidden;
+    }
+
+    .column {
+        width: 48%;
+        margin: 1%;
+    }
+    img .imgContainer {
+        width: 50%;
+        height: 25%;
+    }
+    p {
+        font-size: medium;
+    }
+}
